@@ -1,60 +1,89 @@
-
 @media screen and (max-width: 600px) {
-    #megaboard {
-      width: 99%; /* Adjust the width for smaller screens */
-    }
+  #megaboard {
+    width: 99%; /* Adjust the width for smaller screens */
   }
+}
+
+#header {
+  margin: auto;
+  font-family: "Trebuchet MS";
+  height: 22px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #aad7c8;
+  margin-top: 10px;
+  /* width: 100%; */
+  text-align: center;
+}
 
 #megaboard {
-    border: 0px solid black;
-    border-radius: 10px;
-    margin:auto;
-    width: 500px;
-    aspect-ratio: 1/1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding:7px;
-    /* gap: 6px; */
-    background-color: #627b8a;
-    margin-top: 5%;
+  border: 0px solid black;
+  border-radius: 10px;
+  margin: auto;
+  width: 500px;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 7px;
+  /* gap: 6px; */
+  background-color: #627b8a;
+  margin-top: 3%;
 }
 
 #board {
-    border: 0px solid black;
-    border-radius: 10px;
-    margin:auto;
-    width: 25%;
-    aspect-ratio: 1/1;
-    display: flex;
-    flex-wrap: wrap;
-    padding:10px;
-    gap: 6px;
-    background-color: #141a1fbf;
-    /* background-color: #3aee70 */
-   
+  border: 0px solid black;
+  border-radius: 10px;
+  margin: auto;
+  width: 25%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 6px;
+  background-color: #141a1fbf;
+  font-family: "Trebuchet MS";
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 100px;
+  flex-direction: row;
+  /* background-color: #3aee70 */
 }
 #smallCells {
-    border: 0px solid black;
-    border-radius: 3px;
-    text-align: center;
-    padding:2px;
-    width: 26.8%;
-    aspect-ratio: 1/1;
-    font-size: 29px;
-    /* line-height : font-size * 1.42857; */
-    font-family:"Trebuchet MS";
-    font-weight: bold;
-    color: rgb(14, 13, 57);
-    /* color: rgb(253, 53, 53); */
-    background-color: #048399;
-    /* background-color: #5ced73; */
-    /* background-color: #BFDB38; */
-    /* text-shadow: .5px .5px 4px rgb(75, 74, 74); */
-
+  border: 0px solid black;
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px;
+  width: 26.8%;
+  aspect-ratio: 1/1;
+  font-size: 29px;
+  /* line-height : font-size * 1.42857; */
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  color: rgb(14, 13, 57);
+  /* color: rgb(253, 53, 53); */
+  background-color: #048399;
+  /* background-color: #5ced73; */
+  /* background-color: #BFDB38; */
+  /* text-shadow: .5px .5px 4px rgb(75, 74, 74); */
 }
 
+#board {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+#footer {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 10px;
+  color: #c7c9c9;
 
-
-
+}
