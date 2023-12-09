@@ -1,13 +1,13 @@
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   #megaboard {
     width: 99%; /* Adjust the width for smaller screens */
-  }
-}
+/*   } */
+/* } */ */
 
 #header {
   margin: auto;
   font-family: "Trebuchet MS";
-  height: 22px;
+  height: 24px;
   font-size: 20px;
   font-weight: 600;
   color: #aad7c8;
@@ -28,7 +28,7 @@
   padding: 7px;
   /* gap: 6px; */
   background-color: #627b8a;
-  margin-top: 3%;
+  margin-top: 10px;
 }
 
 #board {
