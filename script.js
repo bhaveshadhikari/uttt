@@ -35,18 +35,58 @@ for (let boardindex = 0; boardindex < 9; boardindex++) {
 
 boardList = document.querySelectorAll("#board") // access by board id
 
-for (let i = 0; i < 9; i++) {
-    // boardList[i].style.backgroundColor = "lightblue";
+// nextBoardIndex;
+var previousBoardIndex = -1;
+var currentBoardIndex;
+var nextBoardIndex;
+var choice = 'O';
 
-    cellList = document.querySelectorAll("#smallCells")
-    for (let j = 0; j < 81; j++) {
-        // cellList[j].style.backgroundColor = "lightgreen";  
 
-        cellList[j].addEventListener("click",()=>{
-            cellList[j].textContent = 'O'
-        })
-    }
+
+
+
+function updateCellColor(choice,index) {
+     if (choice === 'X') {
+        cellList[index].style.backgroundColor = "#BFDB38";        
+     }
+     if (choice === 'O') {
+        cellList[index].style.backgroundColor = "#5ced73";        
+     }
 }
+
+
+cellList = document.querySelectorAll("#smallCells")
+
+for (let j = 0; j < 81; j++) {
+    
+    cellList[j].addEventListener("click",()=>{
+        
+
+            currentBoardIndex = previousBoardIndex === -1 ? -1: Math.floor(j/9)
+            if (currentBoardIndex === previousBoardIndex && cellList[j].textContent===' ') {
+                choice = choice == 'O'? 'X' : 'O';
+                
+                nextBoardIndex = j % 9
+
+                cellList[j].textContent = choice
+                
+                updateCellColor(choice,j);
+
+                if(currentBoardIndex!= -1){
+                    boardList[currentBoardIndex].style.backgroundColor = "#141a1fbf";
+                }
+
+                
+                boardList[nextBoardIndex].style.backgroundColor ="#001535fa"  /// next active board
+                
+                previousBoardIndex = nextBoardIndex;
+            }
+        
+    })  
+}
+
+   
+
 
 
 
