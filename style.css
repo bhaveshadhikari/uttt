@@ -1,14 +1,14 @@
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     #megaboard {
-      width: 90%; /* Adjust the width for smaller screens */
-/*     } */
-/*   }  */
+      width: 98%; /* Adjust the width for smaller screens */
+    }
+  } 
 
 #megaboard {
     border: 0px solid black;
     border-radius: 10px;
-    margin:auto;
+    margin: auto;
     width: 500px;
     aspect-ratio: 1/1;
     display: flex;
